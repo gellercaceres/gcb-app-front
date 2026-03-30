@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --brand-ink: #0f2230;
+  --brand-ink-soft: #27485f;
+  --brand-gold: #d6a84f;
+  --surface: #f4f7fb;
+  --surface-card: #ffffff;
+  --text-primary: #12202d;
+  --text-secondary: #5f7386;
+  --stroke: #dce5ef;
+  --shadow-soft: 0 18px 40px -28px rgba(16, 32, 47, 0.45);
+}
+
+body {
+  margin: 0;
+  font-family: 'Aptos', 'Segoe UI Variable', 'Trebuchet MS', sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%, #e6eef7 0%, transparent 38%),
+    radial-gradient(circle at 90% 10%, #e2edf7 0%, transparent 40%),
+    var(--surface);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bahnschrift', 'Aptos', 'Segoe UI Variable', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+input,
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+.premium-card {
+  border: 1px solid var(--stroke);
+  border-radius: 1.25rem;
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+}
+
+.premium-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--brand-ink-soft);
+}
+
+.premium-button {
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  background: linear-gradient(110deg, var(--brand-ink) 0%, var(--brand-ink-soft) 100%);
+  color: #fff;
+  font-weight: 700;
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.premium-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px -20px rgba(12, 33, 49, 0.95);
+}
