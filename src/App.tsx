@@ -6,6 +6,8 @@ import AppShell from './layouts/AppShell';
 import Dashboard from './pages/Dashboard';
 import Orders from './pages/Orders';
 import Customers from './pages/Customers';
+import Products from './pages/Products';
+import Categories from './pages/Categories';
 import Settings from './pages/Settings';
 
 function RequireAuth({ children }: { children: ReactElement }) {
@@ -34,6 +36,8 @@ function App() {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="orders" element={<Orders />} />
         <Route path="customers" element={<Customers />} />
+        <Route path="products" element={<Products />} />
+        <Route path="categories" element={<Categories />} />
         <Route path="settings" element={<Settings />} />
       </Route>
       <Route path="*" element={<Navigate to="/app/dashboard" replace />} />

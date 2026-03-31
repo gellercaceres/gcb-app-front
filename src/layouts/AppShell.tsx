@@ -4,6 +4,8 @@ import Sidebar from '../components/Sidebar';
 const mobileNavItems = [
   { to: '/app/dashboard', label: 'Dashboard' },
   { to: '/app/orders', label: 'Ordenes' },
+  { to: '/app/products', label: 'Productos' },
+  { to: '/app/categories', label: 'Categorias' },
   { to: '/app/customers', label: 'Clientes' },
   { to: '/app/settings', label: 'Config' },
 ];
